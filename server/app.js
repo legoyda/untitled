@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = 3005;
 
+
 mongoose.connect('mongodb+srv://test:test123@graphql-tutorial.htas0.mongodb.net/graphql-tutorial?retryWrites=true&w=majority', {useMongoClient: true});
 
 app.use('/graphql', graphqlHTTP({
